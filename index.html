@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Está temblando en Malasia</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: "Chivo", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 1.2;
+                background: rgba(255, 255, 255, 1);
+                color: #222;
+                background-image: linear-gradient(rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 1) 95vh), url("https://cdn4.premiumread.com/?url=https://malaymail.com/malaymail/uploads/images/2025/03/29/268342.jpg&w=1000&q=100&f=jpg&t=6");
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                background-position: 0px -10vw;
+            }
+            div.container {
+                width: min(800px, 90%);
+                margin: 2rem auto;
+            }
+            h1 {
+                font-size: calc(2rem + 3vw);
+                font-weight: 900;
+                padding: 0.125rem;
+                text-align: center;
+            }
+            h2 {
+                margin: 2rem 0 1rem 0;
+                border-bottom: 1px solid black;
+                font-weight: 800;
+                padding: 0.25rem;
+            }
+
+            h3 {
+                margin: 0;
+                font-weight: 800;
+                padding: 0.25rem;
+            }
+
+            h5 {
+                font-size: calc(0.6rem + 0.6vw);
+                margin: 0 0 2rem 0;
+                font-weight: 800;
+                padding: 0.25rem;
+                text-align: center;
+                letter-spacing: 0.01vw;
+            }
+
+            a {
+                color: #000;
+                font-weight: 400;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+            p {
+                margin: 0.5rem 0;
+                padding: 0.25rem;
+            }
+            code {
+                font-size: 110%;
+                color: #808080;
+                background: #C0C0C0;
+                border-radius: 2px;
+                border: 1px solid #eee;
+            }
+            table {
+                width: 100%;
+                text-align: center;
+            }
+            table a {
+                text-decoration: none;
+            }
+            table a:hover:after {
+                content: " ⤴";
+            }
+            th,
+            td {
+                border-bottom: 1px solid black;
+                border-collapse: collapse;
+                padding: 0.25rem;
+            }
+            td {
+                font-size: 90%;
+            }
+            th,
+            td strong {
+                font-weight: 700;
+            }
+            td span {
+                color: #999;
+            }
+            th:nth-child(1),
+            th:nth-child(2),
+            td:nth-child(1),
+            td:nth-child(2) {
+                text-align: left;
+            }
+            footer {
+                border-top: 3px solid black;
+                margin: 2rem 0 0 0;
+                padding: 1rem;
+                text-align: center;
+                font-size: 80%;
+                letter-spacing: 1px;
+            }
+            .escondido {
+                display: none;
+            }
+
+            th {
+                line-height: 1.5;
+            }
+
+            th svg {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-bottom: -0.25rem;
+                margin-left: -0.25rem;
+                fill: #2b678c;
+            }
+
+            div.mapas {
+                width: 100%;
+                height: 400px;
+                margin: 1rem 0 3rem 0;
+                box-shadow: 0 0 4px #eee;
+            }
+
+            .leaflet-control {
+                display: none;
+            }
+
+            /* Lo que sigue es para la historia */
+
+            p.lead {
+                font-size: 120%;
+                font-weight: 200;
+            }
+
+            p em {
+                font-weight: 700;
+                font-style: normal;
+            }
+
+            p span {
+                border-radius: 6px 6px;
+                padding: 0 0.5rem 0 1.5rem;
+                background-color: #a5d8f8;
+                background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M5.47,58.58H17A44.19,44.19,0,0,0,5.47,82.93Zm17.84,0h7.62l-3.56-35.8,13.4-5.66V30.65l12.06,4.8-4.06,22A31.82,31.82,0,0,0,18.39,89.08H9.53A40.25,40.25,0,0,1,23.31,58.58ZM50,61.9A27.18,27.18,0,0,1,77.18,89.08h-9a18.27,18.27,0,1,0-36.53,0H22.82A27.18,27.18,0,0,1,50,61.9Zm0,13.28a13.86,13.86,0,0,1,13.78,13.9H54.92a4.92,4.92,0,0,0-9.84,0h-9A14,14,0,0,1,50,75.18Zm8.24-16.6a35.85,35.85,0,0,0-5.29-1L57.5,32.87,45,28V15.28l4.42-1.85L69.56,18.6l3.81,40h3.32a40.25,40.25,0,0,1,13.78,30.5H81.61A31.68,31.68,0,0,0,58.24,58.58Zm24.72,0H94.53V82.93A45.16,45.16,0,0,0,83,58.58Z"></path></svg>');
+                background-position: 0.3rem 0;
+                background-size: 1rem 1rem;
+                background-repeat: no-repeat;
+            }
+
+            figure {
+                width: 80%;
+                margin: 1rem auto;
+                padding: 0.25rem;
+                border: 1px solid #eee;
+                box-shadow: 0 0 5px #fcfcfc;
+            }
+            figure img {
+                width: 100%;
+                height: auto;
+            }
+
+            figure figcaption {
+                font-size: 90%;
+                color: gray;
+                padding: 0.5rem;
+            }
+
+            .fuentes {
+                margin-top: 2rem;
+                border: 1px solid #eee;
+                background: #fafafa;
+                padding: 1rem;
+                font-size: 90%;
+                color: #444;
+            }
+        </style>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" class="escondido">
+            <symbol id="location" viewBox="0 0 100 100">
+                <path d="M36.73,36.09a13,13,0,0,0,13,12.67A12.65,12.65,0,0,0,62.44,36.09a13.22,13.22,0,0,0-9.59-12.67v-18A31.37,31.37,0,0,1,81.14,36.58a30.89,30.89,0,0,1-4.55,16.36l-25,41.21H47.93L23,52.94A31.36,31.36,0,0,1,46.7,5.46v18A13.41,13.41,0,0,0,36.73,36.09Z"></path>
+            </symbol>
+
+            <symbol id="time" viewBox="0 0 100 100">
+                <path d="M15.44,49H6.33a43.68,43.68,0,0,1,87.34,0L89.24,52.1,84.56,49a34.57,34.57,0,0,0-69.12,0Zm1.84,29.77A44.16,44.16,0,0,1,6.83,56.65h9.22a33.86,33.86,0,0,0,7.63,15.62Zm5.66,5.41,6.4-6.52A34.17,34.17,0,0,0,46.19,84.2v9.22A42.43,42.43,0,0,1,22.94,84.2ZM86.53,64.64,54.31,47.91V25.16H47.05V52.22l36,18.94ZM77.55,84a43.22,43.22,0,0,1-23.61,9.47V84.2a32.11,32.11,0,0,0,17-6.77Z"></path>
+            </symbol>
+
+            <symbol id="tsunami" viewBox="0 0 100 100">
+                <path d="M91.33,88.22H8.92c-2.22,0-3.57-1.23-3.57-3a4.63,4.63,0,0,1,.61-2L17.77,62.51c5.17-9,16.36-13.9,27.06-13.9,11.57,0,17.35,5.54,17.35,10.46,0,4.3-3.32,7.13-6.77,8.12H53.07a3.49,3.49,0,0,0-3.56-3.82,3.42,3.42,0,0,0-3.32,3.45c0,3.81,4.79,7.5,13.16,7.5,7.75,0,18-3.57,24.6-9.1L94.28,83.3a3.51,3.51,0,0,1,.37,1.84A3,3,0,0,1,91.33,88.22Zm-10.21-28L52.71,10.36a3.19,3.19,0,0,0-5.66,0L26.14,47.51a36.15,36.15,0,0,1,12.67-4.06L49.88,23.89,73.37,64.36A19.72,19.72,0,0,0,81.12,60.17Z"></path>
+            </symbol>
+
+            <symbol id="magnitude" viewBox="0 0 100 100">
+                <path d="M5.47,58.58H17A44.19,44.19,0,0,0,5.47,82.93Zm17.84,0h7.62l-3.56-35.8,13.4-5.66V30.65l12.06,4.8-4.06,22A31.82,31.82,0,0,0,18.39,89.08H9.53A40.25,40.25,0,0,1,23.31,58.58ZM50,61.9A27.18,27.18,0,0,1,77.18,89.08h-9a18.27,18.27,0,1,0-36.53,0H22.82A27.18,27.18,0,0,1,50,61.9Zm0,13.28a13.86,13.86,0,0,1,13.78,13.9H54.92a4.92,4.92,0,0,0-9.84,0h-9A14,14,0,0,1,50,75.18Zm8.24-16.6a35.85,35.85,0,0,0-5.29-1L57.5,32.87,45,28V15.28l4.42-1.85L69.56,18.6l3.81,40h3.32a40.25,40.25,0,0,1,13.78,30.5H81.61A31.68,31.68,0,0,0,58.24,58.58Zm24.72,0H94.53V82.93A45.16,45.16,0,0,0,83,58.58Z"></path>
+            </symbol>
+        </svg>
+
+        <div class="container">
+            <h1>
+                Está temblando<br />
+                en Malasia
+            </h1>
+            <h5>Diseño y visualización de información | Universidad de Chile</h5>
+            <p>
+                El <abbr title="United States Geological Survey">USGS</abbr> (Servicio Geológico de Estados Unidos) es responsable del
+                <a href="https://www.usgs.gov/programs/earthquake-hazards" target="_blank">Earthquake Hazards Program</a>, que monitorea e informa sobre movimientos telúricos, además de evaluar sus impactos y riesgos. Los resultados de su
+                monitoreo son compartidos mediante <a href="https://earthquake.usgs.gov/earthquakes/feed/" target="_blank">Real-time Notifications</a>, que pueden consultarse en distintos formatos.
+            </p>
+            <p>
+                Entre los compartidos está el GeoJSON Summary Format, que es actualizado a cada minuto y tiene una estructura (Output) que se explica en su página oficial. Aprovechando la
+                <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="_blank">explicación de la estructura (Output)</a>, y lo ya preparado en este código fuente, que entra al <code>features:[Latest earthquakes in Malaysia]</code> para obtener
+                los datos, podemos visualizar lo que sigue:
+            </p>
+            <h2>En Malasia</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <svg><use href="#location"></use></svg> Place
+                        </th>
+                        <th>
+                            <svg><use href="#time"></use></svg> Time
+                        </th>
+                        <th>
+                            <svg><use href="#magnitude"></use></svg> Mag
+                        </th>
+                        <th>
+                            <svg><use href="#tsunami"></use></svg> Tsunami
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="my"></tbody>
+            </table>
+
+            <div class="mapas" id="mapaMY"></div>
+
+            <h2 class="escondido">En Japón</h2>
+            <table class="escondido">
+                <thead>
+                    <tr>
+                        <th>
+                            <svg><use href="#location"></use></svg> place
+                        </th>
+                        <th>
+                            <svg><use href="#time"></use></svg> time
+                        </th>
+                        <th>
+                            <svg><use href="#magnitude"></use></svg> mag
+                        </th>
+                        <th>
+                            <svg><use href="#tsunami"></use></svg> tsunami
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="jp"></tbody>
+            </table>
+
+            <div class="mapas escondido" id="mapaJP"></div>
+
+            <h2 class="escondido">En Rusia</h2>
+            <table class = "escondido">
+                <thead>
+                    <tr>
+                        <th>
+                            <svg><use href="#location"></use></svg> place
+                        </th>
+                        <th>
+                            <svg><use href="#time"></use></svg> time
+                        </th>
+                        <th>
+                            <svg><use href="#magnitude"></use></svg> mag
+                        </th>
+                        <th>
+                            <svg><use href="#tsunami"></use></svg> tsunami
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="ru"></tbody>
+            </table>
+
+            <div class="mapas escondido" id="mapaRU"></div>
+
+
+            <h2>Malasia comparando con otros países</h2>
+            <p> Malasia tiene muy pocos terremotos en comparación con los países seleccionados (Rusia y Japón) 
+                <p>En promedio, solo se producen alrededor de 7.13, generalmente terremotos muy pequeños cada año.</p>
+            <p>Registros sobre 3.9 M del último mes, comparado con Japón y Rusia</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50" id="viz"></svg>
+ 
+            <h2>Historia de terremotos en Malasia</h2>
+
+            <p class="lead">
+                Malasia se encuentra cerca de dos de los límites de placas sísmicamente más activos: el límite entre las placas Indoaustraliana y Euroasiática al oeste, y el límite entre las placas Euroasiática y del Mar de Filipinas al este. En Malasia se han sentido grandes terremotos originados en estos límites de placas. Los temblores que se sienten a lo largo de la costa oeste de la península malaya provienen de grandes terremotos en la zona sísmica activa de Sumatra y el Mar de Andamán. La península malaya (por ejemplo, Bukit Tinggi, Jerantut, Temenggor y Kuala Pilah) y el este de Malasia han experimentado terremotos de origen local. Estos terremotos locales están asociados con fallas activas que existen en la península malaya, Sabah y Sarawak. Se han delimitado varias fallas potencialmente activas y los terremotos locales en el este de Malasia parecen estar relacionados con algunas de ellas. Además de los terremotos locales, el este de Malasia también se ve afectado por temblores originados por grandes terremotos ubicados sobre el sur de Filipinas y el norte de Sulawesi.
+                            </p>
+
+            <figure>
+             <img src="https://volcanodiscovery.de/maps/quakemap-loc-21980925.jpg">
+            </figure>
+
+            <p> Un moderado sismo de magnitud 4.3 golpeó a 33 km lejos de Kudat, Sabah,  Malasia, en la mañana de martes, 22 jul 2025 a las 10:52 hora local (Asia/Kuching GMT +8). El temblor tuvo una profundidad grande de 643 km y no fue sentido (o al menos no reportado).
+               
+                
+            <p> Desde el 1900, Malasia ha tenido 147 sismos de magnitud hasta 7.0:
+                <ul> 
+                    <li> 1 sismo de magnitud 7 o superior</li>
+                    <li> 4 sismos de magnitud entre 6 y 7 </li>
+                    <li> 39 sismos de magnitud entre 5 y 6</li>
+                    <li> 103 sismos de magnitud entre 4 y 5 </li>
+            </ul>
+
+
+
+            </p> 
+        <h2> LOS SISMOS MÁS GRANDES EN LA HISTORIA DE MALASIA </h2> 
+        <p> El sismo más grande que ocurrió en Malasia durante los últimos 10 años fue un terremoto de magnitud 5.9 que golpeó Sabah,  Malasia, hace 10 años el viernes 5 jun 2015 a las 07:15 hora local (Asia/Kuching GMT +8). El sismo ocurrió a 22 km de distancia al norte de Ranau y a 15.5 km de profundidad.</p>
+            <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/2015_Nepal_depremi_%287%29.jpg/250px-2015_Nepal_depremi_%287%29.jpg" alt="Imagen del Terremoto 2015, Sabah." />
+
+            </figure>
+        <p> El sismo más fuerte desde 1900
+        Hace 121 años, el viernes 28 oct 1904 a las 13:51 hora local (Tiempo Universal GMT +0), Mar de Filipinas Occidental,  Malasia, fue golpeado por un terremoto de magnitud 7.0. Este fue el terremoto más grande que haya ocurrido en Malasia en más de 100 años (desde 1900).</p>
+        <figure>
+            </figure>
+
+            <p>Conclusión y vínculo a otros trabajos, mencionando el país. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum interdum ante eget suscipit. Aliquam eget justo massa. Nunc faucibus venenatis tortor at pellentesque. Donec vel nisl in velit ultrices mollis nec sit amet augue. Nam imperdiet a diam at vestibulum. In maximus felis quis rutrum elementum. In varius elit nisl, quis aliquet mauris porttitor non. Nulla sed elit sapien. Pellentesque ac luctus metus. Vestibulum ut augue nunc.</p>
+
+            <div class="fuentes">
+                <h3>Fuentes:</h3>
+                <p>Latest earthquakes in Malaysia <a href="https://www.volcanodiscovery.com/es/earthquakes/malaysia/past24hrs.html">Terremotos más recientes en Malasia</a>.</p>
+                <p>Malasia rescata a los 137 montañistas atrapados tras un sismo: <a href="https://www.swissinfo.ch/spa/malasia-rescata-a-los-137-monta%C3%B1istas-atrapados-tras-un-sismo/41474582">Rescate en Malasia</a>.</p>
+                <p>MALAYSIAN METEROLOGICAL DEPARTMENT: <a href="https://www.met.gov.my/en/pendidikan/tsunami/">Departamento Meteorológico Malayo</a>.</p>
+                <p>Lista de terremotos en Malasia: <a href="https://en.wikipedia.org/wiki/List_of_earthquakes_in_Malaysia">Lista de Terremotos en Malasia</a>.</p>
+                <p>Terremoto 22 de Julio, 2025: <a href="https://www.volcanodiscovery.com/es/sismos/informe-sismo/21980925/mag4quake-Jul-22-2025-Sabah-Malaysia.html">Link</a>.</p>
+            </div>
+
+            <footer>
+                <p>Desarrollado por <a href="#" target="_blank">Mac Torres R</a> &copy; 2025</p>
+            </footer>
+        </div>
+        <script>
+            const malayos = document.getElementById("my"); //saco datos de malasiaaaaa
+            const japoneses = document.getElementById("jp"); //saco datos de japon
+            const rusos = document.getElementById("ru"); //saco datos de rusia
+
+            var conteoMalayos = 0; //conteo para cantida de terremotos sobre 3.9M
+            var conteoJaponeses = 0;
+            var conteoRusos = 0;
+
+            async function datos(url) {
+                try {
+                    let consulta = await fetch(url);
+                    let data = await consulta.json();
+                    let temblores = data.features;
+                    console.log(temblores);
+
+                    const mapaMalasia = L.map("mapaMY").setView([3.1385027,101.6045876], 6);
+                    const tiles = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                        maxZoom: 19,
+                        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                    }).addTo(mapaMalasia);
+
+                    temblores.forEach((t) => {
+                        if (t.properties.place.includes("Malaysia") && t.properties.mag >= 3.9) {
+                            malayos.innerHTML += `<tr>
+                            <td><a href="${t.properties.url}" target="_blank">${t.properties.place}</a></td>
+                            <td>${tiempo(t.properties.time)}</td>
+                            <td>${magnitud(t.properties.mag)}</td>
+                            <td>${tsunami(t.properties.tsunami)}</td>
+                        </tr>`;
+                            conteoMalayos++;
+                            L.marker([t.geometry.coordinates[1], t.geometry.coordinates[0]]).addTo(mapaMalasia).bindPopup(t.properties.place);
+                        }
+
+                        if (t.properties.place.includes("Japan") && t.properties.mag >= 3.9) {
+                            japoneses.innerHTML += `<tr>
+                            <td><a href="${t.properties.url}" target="_blank">${t.properties.place}</a></td>
+                            <td>${tiempo(t.properties.time)}</td>
+                            <td>${magnitud(t.properties.mag)}</td>
+                            <td>${tsunami(t.properties.tsunami)}</td>
+                        </tr>`;
+                            conteoJaponeses++;
+                        }
+
+                        if (t.properties.place.includes("Russia") && t.properties.mag >= 3.9) {
+                            rusos.innerHTML += `<tr>
+                            <td><a href="${t.properties.url}" target="_blank">${t.properties.place}</a></td>
+                            <td>${tiempo(t.properties.time)}</td>
+                            <td>${magnitud(t.properties.mag)}</td>
+                            <td>${tsunami(t.properties.tsunami)}</td>
+                        </tr>`;
+                            conteoRusos++;
+                        }
+                    });
+                const dividir = 9;
+                document.getElementById("viz").innerHTML = `<g><circle cx="10" cy="25" r="${
+                    conteoMalayos / dividir    
+                }" fill="#2A86BF"></circle><text x="10" y="25" font-size="1.5" dominant-baseline="middle" text-anchor="middle" fill="white">${conteoMalayos}</text><text x="10" y="45" font-size="2" dominant-baseline="middle" text-anchor="middle">Malasia</text><g>`;
+
+                document.getElementById("viz").innerHTML += `<g transform="translate(25)"><circle cx="10" cy="25" r="${
+                    conteoJaponeses / dividir
+                }" fill="#2A86BF"></circle><text x="10" y="25" font-size="1.5" dominant-baseline="middle" text-anchor="middle" fill="white">${conteoJaponeses}</text><text x="10" y="45" font-size="2" dominant-baseline="middle" text-anchor="middle">Japón</text><g>`;
+
+                document.getElementById("viz").innerHTML += `<g transform="translate(75)"><circle cx="10" cy="25" r="${
+                    conteoRusos / dividir
+                }" fill="#2A86BF"></circle><text x="10" y="25" font-size="1.5" dominant-baseline="middle" text-anchor="middle" fill="white">${conteoRusos}</text><text x="10" y="45" font-size="2" dominant-baseline="middle" text-anchor="middle">Rusia</text><g>`;
+                } catch (error) {
+                    console.log("Error al obtener los datos: ", error);
+                }
+            }
+    
+            datos("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_month.geojson");
+
+            function magnitud(x) {
+                var numero = x;
+                if (x > 4.9) {
+                    numero = "<strong>" + x + "</strong>";
+                }
+                return numero;
+            }
+
+            function tiempo(x) {
+                var unix = x;
+                var dato = new Date(unix);
+                var formato = dato.toISOString();
+                var corte = formato.split("T");
+                return corte[0] + " a las " + corte[1].split(":")[0] + ":" + corte[1].split(":")[1] + " hrs.";
+            }
+
+            function tsunami(x) {
+                var mensaje = "<span>Sin alerta</span>";
+                if (x == 1) {
+                    mensaje = "<strong>¡Tsunami!</strong>";
+                }
+                return mensaje;
+            }
+        </script>
+    </body>
+</html>
